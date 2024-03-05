@@ -1,0 +1,21 @@
+body{background-color: rgb(255, 205, 205);}
+.head{color:blue;}
+.htag{color:red;}
+p{color:white;}
+.ptag{
+    color:black;
+    font-size:large;
+}
+#para{ 
+    font-size: x-small;
+    color:green;
+}
+a{
+    background-color: aqua;
+    color:blue
+}
+.first>a{
+    background-color: blanchedalmond;
+}
+blue{color: blue;}
+red{color:red;}

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+blue{color:blue;}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar  {
+  display: flex;
+  align-items: center;  
+  padding: 20px;
+}
+
+li>a {
+  color:black;
+}
+
+.navbar .logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar .navbar-items  {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  margin-left: 250px;
+  margin-right:0px;
+  justify-content: center;
+}
+
+.navbar .navbar-items li {
+  margin-left: 20px;
+}
+
+.navbar .navbar-items li a {
+  text-decoration: none;
+  color:grey;
+}
+
+.navbar .Btn {
+  position: absolute; 
+  right:150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:blue;
+  background-color: aqua;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero .hero-content {
+  max-width: 500px;
+}
+
+.hero .hero-content h2 {
+  font-size: 48px; 
+  margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+  font-size: 24px;
+  color:grey;
+  margin-bottom: 30px;
+}
+
+.hero .hero-content .inleft {
+  background-color: blue;
+  color:white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .hero-image img {
+  width: 600px;
+  height: 700px;
+}
