@@ -1,16 +1,30 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .photo {
     width: 50%; 
     margin: 10% auto; 
     padding: 25% ; 
     text-align: center; 
+    overflow: hidden;
   }
   
   .photo img {
     width: 100%; 
     height: auto;
     display:flex; 
+    margin: 0 auto;
   }
-  a{color:black}
+
+  a{
+    color:black;
+    display: block;}
+
   button {
     width:100%;
     text-align: center;

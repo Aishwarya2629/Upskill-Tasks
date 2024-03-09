@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kick the Ball</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    #ball {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%; /* Makes the element round */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    #form-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #details-form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="ball"></div>
+
+<div id="form-container">
+    <div id="details-form-container">
+        <h2>Enter Details</h2>
+        <form id="details-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('ball').addEventListener('click', function() {
+        document.getElementById('form-container').style.display = 'flex';
+    });
+
+    document.getElementById('details-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        // You can handle the form submission here, for example, by sending the data to a server
+        console.log('Name: ' + name + ', Email: ' + email);
+        // Reset the form and hide it
+        document.getElementById('details-form').reset();
+        document.getElementById('form-container').style.display = 'none';
+    });
+</script>
+</body>
+</html>
